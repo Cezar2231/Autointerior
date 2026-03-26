@@ -1,0 +1,63 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+.logo{
+  width: 60px;
+}
+.logo-text {
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #dc2626;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+.hero-bg {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('http://static.photos/black/1920x1080/42') center/cover;
+}
+.slide-indicator {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 2px solid white;
+  transition: all 0.3s;
+}
+.slide-indicator.active {
+  background-color: white;
+}
+.service-icon-bg {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+.footer-gradient {
+  background: linear-gradient(to bottom, #0f172a, #020617);
+}
+.big-text-outline {
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 900;
+  color: #dc2626;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 1;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #dc2626;
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link.active::after {
+  width: 100%;
+}
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
