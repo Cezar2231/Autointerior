@@ -38,6 +38,9 @@ body {
   letter-spacing: 0.1em;
   text-align: center;
   line-height: 1;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word; 
 }
 .nav-link {
   position: relative;
