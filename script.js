@@ -101,6 +101,7 @@ setInterval(() => {
 
 // Init
 updateSlide();
+
         // Navbar scroll effect
         let lastScroll = 0;
         window.addEventListener('scroll', () => {

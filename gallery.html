@@ -76,8 +76,8 @@
             <!-- Bottom Row: Navigation Menu -->
             <div class="hidden lg:flex justify-center items-center h-14">
                 <div class="flex items-center space-x-8">
-                    <a href="index.html" class="nav-link active text-red-600 font-semibold text-sm uppercase tracking-wider">Начало</a>
-                    <a href="gallery.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Галерия</a>
+                    <a href="index.html" class="nav-link text-red-600 font-semibold text-sm uppercase tracking-wider">Начало</a>
+                    <a href="gallery.html" class="nav-link active text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Галерия</a>
                     <a href="video.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Видео</a>
                     <a href="information.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Информация</a>
                     <a href="materials.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Материали</a>
@@ -103,153 +103,11 @@
         </div>
     </nav>
 
- <!-- Hero Section -->
-<section class="relative hero-bg min-h-[600px] flex items-center justify-center overflow-hidden">
-    
-    <!-- Navigation Arrows -->
-    <button onclick="prevSlide()" class="z-20 absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-white transition group z-10">
-        <i data-lucide="arrow-left" class="w-6 h-6"></i>
-    </button>
+ <!-- Gallery section -->
+  <section>
+    <h1 class="text-7xl">Галерия</h1>
+  </section>
 
-    <button onclick="nextSlide()" class="z-20 absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center text-white transition group z-10">
-        <i data-lucide="arrow-right" class="w-6 h-6"></i>
-    </button>
-
-    <!-- Hero Content -->
-    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-
-        <!-- Top Text -->
-        <div class="bg-black/60 backdrop-blur-md inline-block px-6 py-3 mb-8 border-l-4 border-red-600">
-            <p id="hero-top-text" class="text-white text-sm md:text-base font-medium"></p>
-        </div>
-
-        <!-- Title -->
-        <h1 id="hero-title" class="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight"></h1>
-
-        <!-- Subtext -->
-        <p id="hero-subtext" class="mt-12 sm:mt-0 text-xs text-gray-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto"></p>
-
-        <!-- Button -->
-        <a href="materials.html" class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-full transition">
-            Повече за материалите
-        </a>
-
-        <!-- Indicators -->
-        <div class="flex justify-center gap-3 mt-12">
-            <button onclick="goToSlide(0)" class="slide-indicator"></button>
-            <button onclick="goToSlide(1)" class="slide-indicator"></button>
-            <button onclick="goToSlide(2)" class="slide-indicator"></button>
-        </div>
-
-    </div>
-</section>
-
-
-    <!-- Services Section -->
-    <section class="py-16 md:py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <!-- Service Card 1 -->
-                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group">
-                    <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
-                        <i data-lucide="circle-dot" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Тапициране/ерго форми на волани</h3>
-                    <ul class="space-y-2 mb-5 text-sm text-slate-600">
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Стадартно тапициране по оригиналната кройка</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Възможност за дизайн по ваш вкус</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Ергономични форми и скосяване</span>
-                        </li>
-                    </ul>
-                    <a href="gallery.html" class="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-red-600 transition group/link">
-                        Към галерията 
-                        <i data-lucide="chevron-right" class="w-4 h-4 group-hover/link:translate-x-1 transition"></i>
-                        <i data-lucide="chevron-right" class="w-4 h-4 -ml-2 group-hover/link:translate-x-1 transition"></i>
-                    </a>
-                </div>
-
-                <!-- Service Card 2 -->
-                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group">
-                    <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
-                        <i data-lucide="grip" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Изработка на маншони</h3>
-                    <ul class="space-y-2 mb-5 text-sm text-slate-600">
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Изработка на изцяло нови маншони</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Възможност за персонализация</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>100% съвместимост на кройката</span>
-                        </li>
-                    </ul>
-                    <a href="gallery.html" class="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-red-600 transition group/link">
-                        Към галерията 
-                        <i data-lucide="chevron-right" class="w-4 h-4 group-hover/link:translate-x-1 transition"></i>
-                        <i data-lucide="chevron-right" class="w-4 h-4 -ml-2 group-hover/link:translate-x-1 transition"></i>
-                    </a>
-                </div>
-
-                <!-- Service Card 3 -->
-                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group">
-                    <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
-                        <i data-lucide="circle-parking" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Тапициране на ръкохватки и топки</h3>
-                    <ul class="space-y-2 mb-5 text-sm text-slate-600">
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Тапициране на топка за скоростен лост</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>тапициране на ръкохватка за ръчна спирачка</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Тапициране на дръжки за врати и тавани</span>
-                        </li>
-                    </ul>
-                    <a href="gallery.html" class="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-red-600 transition group/link">
-                        Към галерията 
-                        <i data-lucide="chevron-right" class="w-4 h-4 group-hover/link:translate-x-1 transition"></i>
-                        <i data-lucide="chevron-right" class="w-4 h-4 -ml-2 group-hover/link:translate-x-1 transition"></i>
-                    </a>
-                </div>
-
-                <!-- Service Card 4 -->
-                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group">
-                    <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
-                        <i data-lucide="palette" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Други интериорни елементи и дизайн</h3>
-                    <p class="text-sm text-slate-600 mb-5 leading-relaxed">
-                        Подлакътници, сенници, колонки, кори или всяка ваша идея за персонализиран дизайн е добре дошла за нас! Разнообразие на материали и цветове!
-                    </p>
-                    <a href="gallery.html" class="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-red-600 transition group/link">
-                        Към галерията 
-                        <i data-lucide="chevron-right" class="w-4 h-4 group-hover/link:translate-x-1 transition"></i>
-                        <i data-lucide="chevron-right" class="w-4 h-4 -ml-2 group-hover/link:translate-x-1 transition"></i>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer-gradient text-white relative pt-20 pb-8">
