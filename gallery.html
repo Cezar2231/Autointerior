@@ -76,8 +76,8 @@
             <!-- Bottom Row: Navigation Menu -->
             <div class="hidden lg:flex justify-center items-center h-14">
                 <div class="flex items-center space-x-8">
-                    <a href="index.html" class="nav-link text-red-600 font-semibold text-sm uppercase tracking-wider">Начало</a>
-                    <a href="gallery.html" class="nav-link active text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Галерия</a>
+                    <a href="index.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Начало</a>
+                    <a href="gallery.html" class="nav-link active text-red-600 font-semibold text-sm uppercase tracking-wider">Галерия</a>
                     <a href="video.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Видео</a>
                     <a href="information.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Информация</a>
                     <a href="materials.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Материали</a>
@@ -88,8 +88,8 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100">
             <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="index.html" class="block px-3 py-2 text-red-600 font-semibold bg-red-50 rounded-md">Начало</a>
-                <a href="gallery.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Галерия</a>
+                <a href="index.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Начало</a>
+                <a href="gallery.html" class="block px-3 py-2 text-red-600 font-semibold bg-red-50 rounded-md">Галерия</a>
                 <a href="video.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Видео</a>
                 <a href="information.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Информация</a>
                 <a href="materials.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Материали</a>
@@ -104,9 +104,90 @@
     </nav>
 
  <!-- Gallery section -->
-  <section>
-    <h1 class="text-7xl">Галерия</h1>
-  </section>
+ <section class="max-w-5xl mx-auto py-10 px-4">
+
+    <h1 class="text-3xl md:text-5xl text-center mt-5 mb-6 text-black-600 font-extrabold">Галерия</h1>
+    <hr class="border-t-2 border-red-500/50 mb-10">
+
+    <!-- Категория -->
+    <div class="space-y-6">
+
+        <!-- Волани -->
+        <div class="p-2">
+              <hr class="border-t-4 border-black w-1/2 mx-auto mb-10">
+            <button onclick="toggleGallery('volani')" class="w-full text-2xl md:text-5xl font-black tracking-wide hover:text-red-600 transition">
+                 <span>Волани</span>
+                <i class="fa-solid fa-arrow-down arrow-icon text-lg md:text-2xl"></i>
+            </button>
+
+            <div id="volani" class="gallery-content">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+                    <img src="pictures/volan1.jpg" class="gallery-img">
+                    <img src="pictures/volan2.jpg" class="gallery-img">
+                    <img src="pictures/volan3.jpg" class="gallery-img">
+                    <img src="pictures/volan4.jpg" class="gallery-img">
+                </div>
+            </div>
+            <hr class="border-t-4 border-black w-1/2 mx-auto mt-10">
+        </div>
+        
+
+        <!-- Маншони -->
+        <div class="p-2">
+            <button onclick="toggleGallery('manshoni')" class="w-full text-2xl md:text-5xl font-black hover:text-red-600">
+                  <span>Маншони</span>
+                <i class="fa-solid fa-arrow-down arrow-icon text-lg md:text-2xl"></i>
+            </button>
+
+            <div id="manshoni" class="gallery-content">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+                    <img src="pictures/volan1.jpg" class="gallery-img">
+                </div>
+            </div>
+            <hr class="border-t-4 border-black w-1/2 mx-auto mt-10">
+        </div>
+
+        <!-- Топки -->
+        <div class="p-2">
+
+            <button onclick="toggleGallery('topki')" class="w-full flex items-center justify-center gap-3 text-2xl md:text-5xl font-black hover:text-red-600">
+                <span>Топки</span>
+                <i class="fa-solid fa-arrow-down arrow-icon text-lg md:text-2xl"></i>
+            </button>
+
+            <div id="topki" class="gallery-content">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+                    <img src="pictures/volan1.jpg" class="gallery-img">
+                </div>
+            </div>
+            <hr class="border-t-4 border-black w-1/2 mx-auto mt-10">
+        </div>
+
+        <!-- Седалки -->
+        <div class="p-2">
+            <button onclick="toggleGallery('sedalki')" class="w-full text-2xl md:text-5xl font-black hover:text-red-600">
+                <span>Седалки</span>
+                <i class="fa-solid fa-arrow-down arrow-icon text-lg md:text-2xl"></i>
+            </button>
+
+            <div id="sedalki" class="gallery-content">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+                    <img src="pictures/volan1.jpg" class="gallery-img">
+                </div>
+            </div>
+            <hr class="border-t-4 border-black w-1/2 mx-auto mt-10">
+        </div>
+
+    </div>
+
+    <hr class="border-t-2 border-red-500/50 mb-6 mt-10">
+
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="fixed inset-0 hidden items-center justify-center z-50 backdrop-blur-lg bg-black/70 transition">
+    <img id="lightbox-img" class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl">
+</div>
 
 
     <!-- Footer -->

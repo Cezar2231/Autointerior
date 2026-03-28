@@ -54,22 +54,33 @@ const totalSlides = 3;
 const indicators = document.querySelectorAll('.slide-indicator');
 
 function updateSlide() {
+    const topText = document.getElementById("hero-top-text");
+    const title = document.getElementById("hero-title");
+    const sub = document.getElementById("hero-subtext");
+
+    // ако няма hero елементи → СПРИ
+    if (!topText || !title || !sub) return;
+
     indicators.forEach((ind, index) => {
         ind.classList.toggle('active', index === currentSlide);
     });
 
-    document.getElementById("hero-top-text").innerText = slidesContent[currentSlide].top;
-    document.getElementById("hero-title").innerHTML = slidesContent[currentSlide].title;
-    document.getElementById("hero-subtext").innerText = slidesContent[currentSlide].sub;
+    topText.innerText = slidesContent[currentSlide].top;
+    title.innerHTML = slidesContent[currentSlide].title;
+    sub.innerText = slidesContent[currentSlide].sub;
 }
 
 function nextSlide() {
+    if (!document.getElementById("hero-title")) return;
+
     currentSlide = (currentSlide + 1) % totalSlides;
     updateSlide();
     animateHeroContent();
 }
 
 function prevSlide() {
+    if (!document.getElementById("hero-title")) return;
+
     currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
     updateSlide();
     animateHeroContent();
@@ -95,12 +106,16 @@ function animateHeroContent() {
 }
 
 // Auto slide
-setInterval(() => {
-    nextSlide();
-}, 10000);
+// Auto slide само ако има hero
+if (document.getElementById("hero-title")) {
+    setInterval(() => {
+        nextSlide();
+    }, 10000);
+
+    updateSlide();
+}
 
 // Init
-updateSlide();
 
         // Navbar scroll effect
         let lastScroll = 0;
@@ -117,3 +132,71 @@ updateSlide();
             lastScroll = currentScroll;
         });
     
+
+let openGallery = null;
+
+
+function toggleGallery(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const icon = el.previousElementSibling.querySelector(".arrow-icon");
+
+    // затваряне на другата отворена категория
+    if (openGallery && openGallery !== el) {
+        closeGallery(openGallery);
+    }
+
+    // toggle текущата
+    if (el.style.maxHeight && el.style.maxHeight !== "0px") {
+        closeGallery(el);
+        openGallery = null;
+    } else {
+        openGallery = el;
+        openGalleryGallery(el);
+    }
+
+    function openGalleryGallery(element) {
+        element.style.maxHeight = element.scrollHeight + "px";
+        if (icon) icon.classList.add("rotate");
+    }
+
+    function closeGallery(element) {
+        element.style.maxHeight = "0px";
+
+        const prevIcon = element.previousElementSibling.querySelector(".arrow-icon");
+        if (prevIcon) prevIcon.classList.remove("rotate");
+    }
+}
+
+
+// LIGHTBOX
+document.addEventListener("DOMContentLoaded", () => {
+
+    const images = document.querySelectorAll(".gallery-img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    images.forEach(img => {
+        img.addEventListener("click", () => {
+            lightbox.classList.remove("hidden");
+            lightbox.classList.add("flex");
+
+            lightboxImg.src = img.src;
+
+            // блокира scroll
+            document.body.style.overflow = "hidden";
+        });
+    });
+
+    // затваряне при клик извън снимката
+    lightbox.addEventListener("click", (e) => {
+        if (e.target !== lightboxImg) {
+            lightbox.classList.add("hidden");
+            lightbox.classList.remove("flex");
+
+            document.body.style.overflow = "auto";
+        }
+    });
+
+});
