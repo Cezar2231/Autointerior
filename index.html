@@ -44,8 +44,8 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="bg-black shadow-md sticky top-0 z-50">
+        <div class="bg-black max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Top Row: Logo and Phone CTA -->
             <div class="flex justify-between items-center h-20 border-b border-gray-100">
 
@@ -62,7 +62,7 @@
                     </div>
                     <div class="flex flex-col">
                         <span class="text-xs text-slate-500">Позвъни</span>
-                        <span><a class="text-sm font-bold text-slate-900" href="tel:+359885315800">088 531 5800</a></span> 
+                        <span><a class="text-sm font-bold text-white" href="tel:+359885315800">088 531 5800</a></span> 
                     </div>
                 </div>
 
@@ -79,22 +79,22 @@
             <div class="hidden lg:flex justify-center items-center h-14">
                 <div class="flex items-center space-x-8">
                     <a href="index.html" class="nav-link active text-red-600 font-semibold text-sm uppercase tracking-wider">Начало</a>
-                    <a href="gallery.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Галерия</a>
-                    <a href="video.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Видео</a>
-                    <a href="information.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Информация</a>
-                    <a href="materials.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Материали</a>
+                    <a href="gallery.html" class="nav-link text-slate-400 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Галерия</a>
+                    <a href="video.html" class="nav-link text-slate-400 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Видео</a>
+                    <a href="information.html" class="nav-link text-slate-400 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Информация</a>
+                    <a href="materials.html" class="nav-link text-slate-400 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Материали</a>
                 </div>
             </div>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100">
+        <div id="mobile-menu" class="hidden lg:hidden bg-black border-t border-gray-100">
             <div class="px-4 pt-2 pb-4 space-y-1">
                 <a href="index.html" class="block px-3 py-2 text-red-600 font-semibold bg-red-50 rounded-md">Начало</a>
-                <a href="gallery.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Галерия</a>
-                <a href="video.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Видео</a>
-                <a href="information.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Информация</a>
-                <a href="materials.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Материали</a>
+                <a href="gallery.html" class="block px-3 py-2 text-slate-400 hover:bg-gray-50 rounded-md">Галерия</a>
+                <a href="video.html" class="block px-3 py-2 text-slate-400 hover:bg-gray-50 rounded-md">Видео</a>
+                <a href="information.html" class="block px-3 py-2 text-slate-400 hover:bg-gray-50 rounded-md">Информация</a>
+                <a href="materials.html" class="block px-3 py-2 text-slate-400 hover:bg-gray-50 rounded-md">Материали</a>
                 <div class="px-3 py-2 border-t border-gray-100 mt-2">
                     <div class="flex items-center gap-2 text-slate-700">
                         <i data-lucide="phone" class="w-4 h-4 text-red-600"></i>
@@ -106,7 +106,7 @@
     </nav>
 
  <!-- Hero Section -->
-<section class="relative hero-bg min-h-[600px] flex items-center justify-center overflow-hidden">
+<section class="relative hero-bg min-h-[600px] flex items-center justify-center overflow-hidden ">
     
     <!-- Navigation Arrows -->
     <button onclick="prevSlide()" class="z-20 absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-white transition group z-10">
@@ -148,7 +148,7 @@
 
 
     <!-- Services Section -->
-    <section class="py-16 md:py-24 bg-slate-50">
+    <section class="py-16 md:py-24 bg-black">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
@@ -164,11 +164,11 @@
 
                     <!-- CONTENT -->
                     <div class="relative p-6 text-white">
-
+                            <!--
                         <div class="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center mb-5 group-hover:scale-110 transition">
                             <i data-lucide="circle-dot" class="w-7 h-7"></i>
                         </div>
-
+                            -->
                         <h3 class="text-lg font-bold mb-3">
                             Тапициране/ерго форми на волани
                         </h3>
@@ -199,10 +199,12 @@
 
                 <!-- Service Card 2 -->
                 <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group">
+                    <!--
                     <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                         <i data-lucide="grip" class="w-7 h-7"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Изработка на маншони</h3>
+                    -->
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Изработка на маншони, топки и ръкохватки</h3>
                     <ul class="space-y-2 mb-5 text-sm text-slate-600">
                         <li class="flex items-start gap-2">
                             <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
@@ -210,11 +212,11 @@
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Възможност за персонализация</span>
+                            <span>Тапициране на топка за скоростен лост</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>100% съвместимост на кройката</span>
+                            <span>Тапициране на ръкохватка за ръчна спирачка</span>
                         </li>
                     </ul>
                     <a href="gallery.html" class="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-red-600 transition group/link">
@@ -226,22 +228,24 @@
 
                 <!-- Service Card 3 -->
                 <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group">
+                    <!--
                     <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                         <i data-lucide="circle-parking" class="w-7 h-7"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Тапициране на ръкохватки и топки</h3>
+                    -->
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Тапициране на седалки и тавани</h3>
                     <ul class="space-y-2 mb-5 text-sm text-slate-600">
                         <li class="flex items-start gap-2">
                             <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Тапициране на топка за скоростен лост</span>
+                            <span>Тапициране на седалки</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>тапициране на ръкохватка за ръчна спирачка</span>
+                            <span>Тапициране на тавани</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Тапициране на дръжки за врати и тавани</span>
+                            <span>100% персонализация</span>
                         </li>
                     </ul>
                     <a href="gallery.html" class="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-red-600 transition group/link">
@@ -253,9 +257,11 @@
 
                 <!-- Service Card 4 -->
                 <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group">
+                    <!--
                     <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                         <i data-lucide="palette" class="w-7 h-7"></i>
                     </div>
+                    -->
                     <h3 class="text-lg font-bold text-slate-900 mb-3">Други интериорни елементи и дизайн</h3>
                     <p class="text-sm text-slate-600 mb-5 leading-relaxed">
                         Подлакътници, сенници, колонки, седалки, тавани, кори или всяка ваша идея за персонализиран дизайн е добре дошла за нас! Разнообразие на материали и цветове!

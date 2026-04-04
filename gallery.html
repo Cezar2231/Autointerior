@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="smooth-scroll bg-gray-50">
+<body class="smooth-scroll bg-black">
 
     <!-- Top Bar -->
     <div class="bg-slate-900 text-white text-sm py-2 px-4">
@@ -44,8 +44,8 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="bg-black shadow-md sticky top-0 z-50">
+        <div class="bg-black max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Top Row: Logo and Phone CTA -->
             <div class="flex justify-between items-center h-20 border-b border-gray-100">
 
@@ -62,7 +62,7 @@
                     </div>
                     <div class="flex flex-col">
                         <span class="text-xs text-slate-500">Позвъни</span>
-                        <span><a class="text-sm font-bold text-slate-900" href="tel:+359885315800">088 531 5800</a></span> 
+                        <span><a class="text-sm font-bold text-white" href="tel:+359885315800">088 531 5800</a></span> 
                     </div>
                 </div>
 
@@ -78,23 +78,23 @@
             <!-- Bottom Row: Navigation Menu -->
             <div class="hidden lg:flex justify-center items-center h-14">
                 <div class="flex items-center space-x-8">
-                    <a href="index.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Начало</a>
-                    <a href="gallery.html" class="nav-link active text-red-600 font-semibold text-sm uppercase tracking-wider">Галерия</a>
-                    <a href="video.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Видео</a>
-                    <a href="information.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Информация</a>
-                    <a href="materials.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Материали</a>
+                    <a href="index.html" class="nav-link active text-red-600 font-semibold text-sm uppercase tracking-wider">Начало</a>
+                    <a href="gallery.html" class="nav-link text-slate-400 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Галерия</a>
+                    <a href="video.html" class="nav-link text-slate-400 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Видео</a>
+                    <a href="information.html" class="nav-link text-slate-400 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Информация</a>
+                    <a href="materials.html" class="nav-link text-slate-400 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Материали</a>
                 </div>
             </div>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100">
+        <div id="mobile-menu" class="hidden lg:hidden bg-black border-t border-gray-100">
             <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="index.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Начало</a>
-                <a href="gallery.html" class="block px-3 py-2 text-red-600 font-semibold bg-red-50 rounded-md">Галерия</a>
-                <a href="video.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Видео</a>
-                <a href="information.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Информация</a>
-                <a href="materials.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Материали</a>
+                <a href="index.html" class="block px-3 py-2 text-red-600 font-semibold bg-red-50 rounded-md">Начало</a>
+                <a href="gallery.html" class="block px-3 py-2 text-slate-400 hover:bg-gray-50 rounded-md">Галерия</a>
+                <a href="video.html" class="block px-3 py-2 text-slate-400 hover:bg-gray-50 rounded-md">Видео</a>
+                <a href="information.html" class="block px-3 py-2 text-slate-400 hover:bg-gray-50 rounded-md">Информация</a>
+                <a href="materials.html" class="block px-3 py-2 text-slate-400 hover:bg-gray-50 rounded-md">Материали</a>
                 <div class="px-3 py-2 border-t border-gray-100 mt-2">
                     <div class="flex items-center gap-2 text-slate-700">
                         <i data-lucide="phone" class="w-4 h-4 text-red-600"></i>
@@ -108,14 +108,14 @@
  <!-- Gallery section -->
  <section class="max-w-5xl mx-auto py-10 px-4">
 
-    <h1 class="text-3xl md:text-5xl text-center mt-5 mb-6 text-black-600 font-extrabold">Галерия</h1>
+    <h1 class="text-3xl md:text-5xl text-center mt-5 mb-6 text-red-600 font-extrabold">Галерия</h1>
     <hr class="border-t-2 border-red-500/50 mb-10">
 
     <!-- Категория -->
     <div class="space-y-6">
 
         <!-- Волани -->
-        <div class="p-2">
+        <div class="p-2 text-white">
             <button onclick="toggleGallery('volani')" class="w-full text-2xl md:text-3xl font-black tracking-wide hover:text-red-600 transition">
                  <span>Волани</span>
                 <i class="fa-solid fa-arrow-down arrow-icon text-lg md:text-2xl"></i>
@@ -129,12 +129,12 @@
                     <img src="pictures/volan4.jpg" class="gallery-img">
                 </div>
             </div>
-            <hr class="border-t-4 border-black w-1/2 mx-auto mt-10">
+            <hr class="border-t-4 border-white w-1/2 mx-auto mt-10">
         </div>
         
 
         <!-- Маншони -->
-        <div class="p-2">
+        <div class="p-2 text-white">
             <button onclick="toggleGallery('manshoni')" class="w-full text-2xl md:text-3xl font-black hover:text-red-600">
                   <span>Маншони</span>
                 <i class="fa-solid fa-arrow-down arrow-icon text-lg md:text-2xl"></i>
@@ -145,11 +145,11 @@
                     <img src="pictures/volan1.jpg" class="gallery-img">
                 </div>
             </div>
-            <hr class="border-t-4 border-black w-1/2 mx-auto mt-10">
+            <hr class="border-t-4 border-white w-1/2 mx-auto mt-10">
         </div>
 
         <!-- Топки -->
-        <div class="p-2">
+        <div class="p-2 text-white">
 
             <button onclick="toggleGallery('topki')" class="w-full flex items-center justify-center gap-3 text-2xl md:text-3xl font-black hover:text-red-600">
                 <span>Топки</span>
@@ -161,11 +161,11 @@
                     <img src="pictures/volan1.jpg" class="gallery-img">
                 </div>
             </div>
-            <hr class="border-t-4 border-black w-1/2 mx-auto mt-10">
+            <hr class="border-t-4 border-white w-1/2 mx-auto mt-10">
         </div>
 
         <!-- Седалки -->
-        <div class="p-2">
+        <div class="p-2 text-white">
             <button onclick="toggleGallery('sedalki')" class="w-full text-2xl md:text-3xl font-black hover:text-red-600">
                 <span>Седалки</span>
                 <i class="fa-solid fa-arrow-down arrow-icon text-lg md:text-2xl"></i>
@@ -176,12 +176,12 @@
                     <img src="pictures/volan1.jpg" class="gallery-img">
                 </div>
             </div>
-            <hr class="border-t-4 border-black w-1/2 mx-auto mt-10">
+            <hr class="border-t-4 border-white w-1/2 mx-auto mt-10">
         </div>
 
-        <div class="p-2">
+        <div class="p-2 text-white">
             <button onclick="toggleGallery('tavani')" class="w-full text-2xl md:text-3xl font-black tracking-wide hover:text-red-600 transition">
-                 <span>Седалки и тавани</span>
+                 <span>Tавани</span>
                 <i class="fa-solid fa-arrow-down arrow-icon text-lg md:text-2xl"></i>
             </button>
 
@@ -193,7 +193,7 @@
                     <img src="pictures/volan4.jpg" class="gallery-img">
                 </div>
             </div>
-            <hr class="border-t-4 border-black w-1/2 mx-auto mt-10">
+            <hr class="border-t-4 border-white w-1/2 mx-auto mt-10">
         </div>
     </div>
 
