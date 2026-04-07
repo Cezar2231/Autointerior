@@ -140,14 +140,13 @@ function toggleGallery(id) {
     const el = document.getElementById(id);
     if (!el) return;
 
-    const icon = el.previousElementSibling.querySelector(".arrow-icon");
+    const button = el.previousElementSibling;
+    const icon = button.querySelector(".arrow-icon");
 
-    // затваряне на другата отворена категория
     if (openGallery && openGallery !== el) {
         closeGallery(openGallery);
     }
 
-    // toggle текущата
     if (el.style.maxHeight && el.style.maxHeight !== "0px") {
         closeGallery(el);
         openGallery = null;
@@ -155,6 +154,19 @@ function toggleGallery(id) {
         openGallery = el;
         openGalleryGallery(el);
     }
+
+    // ⏳ чакаме анимацията да свърши
+    setTimeout(() => {
+        const navbar = document.querySelector("nav");
+        const offset = navbar ? navbar.offsetHeight : 0;
+
+        const y = button.getBoundingClientRect().top + window.scrollY;
+
+        window.scrollTo({
+            top: y - offset - 10,
+            behavior: "smooth"
+        });
+    }, 400);
 
     function openGalleryGallery(element) {
         element.style.maxHeight = element.scrollHeight + "px";
@@ -168,7 +180,6 @@ function toggleGallery(id) {
         if (prevIcon) prevIcon.classList.remove("rotate");
     }
 }
-
 
 // LIGHTBOX
 document.addEventListener("DOMContentLoaded", () => {
